@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.css" />
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
 
     <!--Font Awesome JS-->
     <script
@@ -38,11 +38,11 @@
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
     ></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="JS/bootstrap.js"></script>
 
     <!-- Custom JS -->
-    <script src="js/custom.js"></script>
-    <script src="/getJsonData.js"></script>
+    <script src="JS/custom.js"></script>
+    <script src="JS/getJsonData.js"></script>
 
     <title>Coca-Cola</title>
   </head>
@@ -78,7 +78,7 @@
         <div class="navbar-collapse collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="javascript:swap('home')">Home</a>
+              <a id="navHome" class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -89,19 +89,14 @@
                 >Drinks</a
               >
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="javascript:swap('coke')"
-                  >Coca Cola</a
-                >
-                <a class="dropdown-item" href="javascript:swap('sprite')"
-                  >Sprite</a
-                >
-                <a class="dropdown-item" href="javascript:swap('pepper')"
-                  >Dr Pepper</a
-                >
+                <a id="navCoke" class="dropdown-item" href="#">Coca Cola</a>
+                <a id="navSprite" class="dropdown-item" href="#">Sprite</a>
+                <a id="navPepper" class="dropdown-item" href="#">Dr Pepper</a>
               </div>
             </li>
             <li class="nav-item">
               <a
+                id="navAbout"
                 class="nav-link"
                 href="#"
                 data-toggle="popover"
@@ -117,512 +112,544 @@
       </div>
     </nav>
 
-    <!-- Home page block element -->
-    <div id="home" class="container-fluid main_contents">
-      <div class="row">
-        <div class="col-sm-12">
-          <div id="main_3d_image">
-            <div id="main_text" class="col-xs-12 col-sm-4">
-              <div id="title_home"></div>
-              <div id="subtitle_home"></div>
-              <div id="description_home"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Row of cards -->
-      <div class="row">
-        <!-- Coca Cola Column-->
-        <div class="col-sm-4">
-          <div class="card">
-            <a
-              href="assets/Renders/coke1.png"
-              data-fancybox
-              data-caption="My 3D Coke Can Render"
-              class="thumbnail"
-            >
-              <img
-                class="card-img-top img-fluid img-thumbnail"
-                src="assets/images/coca_cola.jpg"
-                alt="Coca Cola"
-              />
-            </a>
-            <div class="card-body">
-              <div id="title_left" class="card-title homeText"></div>
-              <div id="subtitle_left" class="card-subtitle homeText"></div>
-              <div id="description_left" class="card-text homeText"></div>
-              <a
-                href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola"
-                class="btn btn-primary"
-                >Find out more ...</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Sprite Column -->
-        <div class="col-sm-4">
-          <div class="card">
-            <a
-              href="assets/Renders/sprite1.png"
-              data-fancybox
-              data-caption="My 3D Sprite Bottle Render"
-              class="thumbnail"
-            >
-              <img
-                class="card-img-top img-fluid img-thumbnail"
-                src="assets/images/sprite.jpg"
-                alt="Sprite"
-              />
-            </a>
-            <div class="card-body">
-              <div id="title_centre" class="card-title homeText"></div>
-              <div id="subtitle_centre" class="card-subtitle homeText"></div>
-              <div id="description_centre" class="card-text homeText"></div>
-              <a
-                href="http://www.coca-cola.co.uk/drinks/sprite/sprite"
-                class="btn btn-primary"
-                >Find out more ...</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Dr Pepper Column -->
-        <div class="col-sm-4">
-          <div class="card">
-            <a
-              href="assets/Renders/pepper1.png"
-              data-fancybox
-              data-caption="My 3D Dr Pepper Cup Render"
-              class="thumbnail"
-            >
-              <img
-                class="card-img-top img-fluid img-thumbnail"
-                src="assets/images/dr_pepper.jpg"
-                alt="Dr Pepper"
-              />
-            </a>
-            <div class="card-body">
-              <div id="title_right" class="card-title homeText"></div>
-              <div id="subtitle_right" class="card-subtitle homeText"></div>
-              <div id="description_right" class="card-text homeText"></div>
-              <a
-                href="http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper"
-                class="btn btn-primary"
-                >Find out more ...</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Coke page block element -->
-    <div id="coke" class="container-fluid main_contents">
-      <!-- Row to hold 3D image and gallery cards -->
-      <div class="row">
-        <!-- Column for 3D image -->
-        <div class="col-sm-9">
-          <div class="card text-left">
-            <div class="card-header">
-              <ul class="nav nav-tabs card-header-tabs">
-                <li class="nav-item">
-                  <a class="nav-link active" href="javascript:swap('coke')"
-                    >Coke</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="javascript:swap('sprite')"
-                    >Sprite</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="javascript:swap('pepper')"
-                    >Dr Pepper</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Coca Cola 3D Model</h4>
-              <iframe
-                class="render"
-                allowfullscreen
-                eager
-                src="https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:8514789833/applications/coke_can/coke_can.html"
-              ></iframe>
-              <p class="card-text">
-                This 3D model of a Coca Cola can was modeled in Blender then
-                exported as a 3D web application using Verge3D. It takes a bit
-                longer to load.
-              </p>
-              <h5 class="card-subtitle">Camera Views</h5>
-              <div class="camera-btns">
-                <p class="card-text">
-                  These buttons select a range of 3D model viewpoints:
-                </p>
-                <div class="btn-group">
-                  <a href="#" class="btn btn-primary btn-responsive camera-font"
-                    >Front</a
-                  >
-                  <a
-                    href="#"
-                    class="btn btn-secondary btn-responsive camera-font"
-                    >Back</a
-                  >
-                  <a href="#" class="btn btn-success btn-responsive camera-font"
-                    >Left</a
-                  >
-                  <a href="#" class="btn btn-danger btn-responsive camera-font"
-                    >Right</a
-                  >
-                  <a href="#" class="btn btn-warning btn-responsive camera-font"
-                    >Top</a
-                  >
-                  <a
-                    href="#"
-                    class="
-                      btn btn-outline-dark
-                      disabled
-                      btn-responsive
-                      camera-font
-                    "
-                    >Off</a
-                  >
-                </div>
+    <!-- Main page contents -->
+    <div class="container-fluid">
+      <!-- Home page block element -->
+      <div id="home" class="main_contents">
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="main_3d_image">
+              <div id="main_text" class="col-xs-12 col-sm-4">
+                <div id="title_home"></div>
+                <div id="subtitle_home"></div>
+                <div id="description_home"></div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Column to hold 3D image gallery -->
-        <div class="col-sm-3">
-          <div class="card text-left">
-            <div class="card-header gallery-header">Gallery</div>
-            <div class="card-body">
-              <h4 class="card-title">3D Image Gallery</h4>
-              <a href="#">
-                <img
-                  class="card-img-top img-fluid img-thumbnail"
-                  src="assets/Renders/coke1.png"
-                  alt="Coca Cola"
-                />
-              </a>
-              <a href="#">
-                <img
-                  class="card-img-top img-fluid img-thumbnail"
-                  src="assets/Renders/coke2.png"
-                  alt="Coca Cola"
-                />
-              </a>
-              <a href="#">
-                <img
-                  class="card-img-top img-fluid img-thumbnail"
-                  src="assets/Renders/coke3.png"
-                  alt="Coca Cola"
-                />
-              </a>
-              <p class="card-text">
-                These 3D images of the Coke can are rendered in Blender with the
-                Cycles render engine
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Row to hold descriptive text -->
-      <div class="row">
-        <!-- Coca Cola Column-->
-        <div class="col-sm-12">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Coca Cola</h3>
-              <p class="card-text">
-                It was 1886, John Pemberton, an Atlanta pharmacist, was inspired
-                by simple curiosity. One afternoon, he stirred up a fragrant,
-                caramel-coloured liquid and, when it was done, the mixture was
-                combined with carbonated water and sampled by customers who all
-                agreed - this new drink was something special!
-              </p>
+        <!-- Row of cards -->
+        <div class="row">
+          <!-- Coca Cola Column-->
+          <div class="col-sm-4">
+            <div class="card">
               <a
-                href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola"
-                class="btn btn-primary"
-                >Find out more ...</a
+                href="assets/Renders/coke1.png"
+                data-fancybox
+                data-caption="My 3D Coke Can Render"
+                class="thumbnail"
               >
+                <img
+                  class="card-img-top img-fluid img-thumbnail"
+                  src="assets/images/coca_cola.jpg"
+                  alt="Coca Cola"
+                />
+              </a>
+              <div class="card-body">
+                <div id="title_left" class="card-title homeText"></div>
+                <div id="subtitle_left" class="card-subtitle homeText"></div>
+                <div id="description_left" class="card-text homeText"></div>
+                <a
+                  href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola"
+                  class="btn btn-primary"
+                  >Find out more ...</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Sprite page block element -->
-    <div id="sprite" class="container-fluid main_contents">
-      <!-- Row to hold 3D image and gallery cards -->
-      <div class="row">
-        <!-- Column for 3D image -->
-        <div class="col-sm-9">
-          <div class="card text-left">
-            <div class="card-header">
-              <ul class="nav nav-tabs card-header-tabs">
-                <li class="nav-item">
-                  <a class="nav-link" href="javascript:swap('coke')">Coke</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="javascript:swap('sprite')"
-                    >Sprite</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="javascript:swap('pepper')"
-                    >Dr Pepper</a
-                  >
-                </li>
-              </ul>
+          <!-- Sprite Column -->
+          <div class="col-sm-4">
+            <div class="card">
+              <a
+                href="assets/Renders/sprite1.png"
+                data-fancybox
+                data-caption="My 3D Sprite Bottle Render"
+                class="thumbnail"
+              >
+                <img
+                  class="card-img-top img-fluid img-thumbnail"
+                  src="assets/images/sprite.jpg"
+                  alt="Sprite"
+                />
+              </a>
+              <div class="card-body">
+                <div id="title_centre" class="card-title homeText"></div>
+                <div id="subtitle_centre" class="card-subtitle homeText"></div>
+                <div id="description_centre" class="card-text homeText"></div>
+                <a
+                  href="http://www.coca-cola.co.uk/drinks/sprite/sprite"
+                  class="btn btn-primary"
+                  >Find out more ...</a
+                >
+              </div>
             </div>
-            <div class="card-body">
-              <h4 class="card-title">Sprite Bottle 3D Model</h4>
-              <iframe
-                class="render"
-                allowfullscreen
-                eager
-                src="https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:8514789833/applications/sprite_bottle_web/sprite_bottle_web.html"
-              ></iframe>
-              <p class="card-text">
-                This 3D model of a Sprite bottle was modeled in Blender then
-                exported as a 3D web application using Verge3D. The label was
-                made using Adobe Illustrator.
-              </p>
-              <h5 class="card-subtitle">Camera Views</h5>
-              <div class="camera-btns">
-                <p class="card-text">
-                  These buttons select a range of 3D model viewpoints:
-                </p>
-                <div class="btn-group">
-                  <a href="#" class="btn btn-primary btn-responsive camera-font"
-                    >Front</a
-                  >
-                  <a
-                    href="#"
-                    class="btn btn-secondary btn-responsive camera-font"
-                    >Back</a
-                  >
-                  <a href="#" class="btn btn-success btn-responsive camera-font"
-                    >Left</a
-                  >
-                  <a href="#" class="btn btn-danger btn-responsive camera-font"
-                    >Right</a
-                  >
-                  <a href="#" class="btn btn-warning btn-responsive camera-font"
-                    >Top</a
-                  >
-                  <a
-                    href="#"
-                    class="
-                      btn btn-outline-dark
-                      disabled
-                      btn-responsive
-                      camera-font
-                    "
-                    >Off</a
-                  >
-                </div>
+          </div>
+
+          <!-- Dr Pepper Column -->
+          <div class="col-sm-4">
+            <div class="card">
+              <a
+                href="assets/Renders/pepper1.png"
+                data-fancybox
+                data-caption="My 3D Dr Pepper Cup Render"
+                class="thumbnail"
+              >
+                <img
+                  class="card-img-top img-fluid img-thumbnail"
+                  src="assets/images/dr_pepper.jpg"
+                  alt="Dr Pepper"
+                />
+              </a>
+              <div class="card-body">
+                <div id="title_right" class="card-title homeText"></div>
+                <div id="subtitle_right" class="card-subtitle homeText"></div>
+                <div id="description_right" class="card-text homeText"></div>
+                <a
+                  href="http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper"
+                  class="btn btn-primary"
+                  >Find out more ...</a
+                >
               </div>
             </div>
           </div>
         </div>
-        <!-- Column to hold 3D image gallery -->
-        <div class="col-sm-3">
-          <div class="card text-left">
-            <div class="card-header gallery-header">Gallery</div>
-            <div class="card-body">
-              <h4 class="card-title">3D Image Gallery</h4>
-              <a href="#">
-                <img
-                  class="card-img-top img-fluid img-thumbnail"
-                  src="assets/Renders/sprite1.png"
-                  alt="Sprite"
-                />
-              </a>
-              <a href="#">
-                <img
-                  class="card-img-top img-fluid img-thumbnail"
-                  src="assets/Renders/sprite2.png"
-                  alt="Sprite"
-                />
-              </a>
-              <a href="#">
-                <img
-                  class="card-img-top img-fluid img-thumbnail"
-                  src="assets/Renders/sprite3.png"
-                  alt="Sprite"
-                />
-              </a>
-              <p class="card-text">
-                These 3D images of the Sprite bottle are rendered in Blender
-                with the Cycles render engine
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
 
-      <!-- Row to hold descriptive text -->
-      <div class="row">
-        <!-- Sprite Column-->
-        <div class="col-sm-12">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Sprite</h3>
-              <p class="card-text">
-                First introduced in 1961, crisp, refreshing, clean-tasting
-                Sprite is now the world's leading lemon and lime flavoured soft
-                drink and is sold in more than 190 different countries. Sprite
-                Zero, part of our no sugar Zero range, offers the delicious
-                lemon lime taste of Sprite without the sugar or calories.
-              </p>
-              <a
-                href="http://www.coca-cola.co.uk/drinks/sprite/sprite"
-                class="btn btn-primary"
-                >Find out more ...</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <!-- About page contents -->
+      <div id="about" style="display: none">Insert About Contents</div>
 
-    <!-- Dr Pepper page block element -->
-    <div id="pepper" class="container-fluid main_contents">
-      <!-- Row to hold 3D image and gallery cards -->
-      <div class="row">
-        <!-- Column for 3D image -->
-        <div class="col-sm-9">
-          <div class="card text-left">
-            <div class="card-header">
-              <ul class="nav nav-tabs card-header-tabs">
-                <li class="nav-item">
-                  <a class="nav-link" href="javascript:swap('coke')">Coke</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="javascript:swap('sprite')"
-                    >Sprite</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="javascript:swap('pepper')"
-                    >Dr Pepper</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Coca Cola 3D Model</h4>
-              <iframe
-                class="render"
-                allowfullscreen
-                eager
-                src="https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:8514789833/applications/dr_pepper_web/dr_pepper_web.html"
-              ></iframe>
-              <p class="card-text">
-                This 3D model of a Dr Pepper cup was modeled in Blender then
-                exported as a 3D web application using Verge3D. The label was
-                made using Adobe Illustrator.
-              </p>
-              <h5 class="card-subtitle">Camera Views</h5>
-              <div class="camera-btns">
+      <!-- Coke page block element -->
+      <div id="coke" class="main_contents">
+        <!-- Row to hold 3D image and gallery cards -->
+        <div class="row">
+          <!-- Column for 3D image -->
+          <div class="col-sm-9">
+            <div class="card text-left">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="javascript:swap('coke')"
+                      >Coke</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:swap('sprite')"
+                      >Sprite</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:swap('pepper')"
+                      >Dr Pepper</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Coca Cola 3D Model</h4>
+                <iframe
+                  class="render"
+                  allowfullscreen
+                  eager
+                  src="https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:8514789833/applications/coke_can/coke_can.html"
+                ></iframe>
                 <p class="card-text">
-                  These buttons select a range of 3D model viewpoints:
+                  This 3D model of a Coca Cola can was modeled in Blender then
+                  exported as a 3D web application using Verge3D. It takes a bit
+                  longer to load.
                 </p>
-                <div class="btn-group">
-                  <a href="#" class="btn btn-primary btn-responsive camera-font"
-                    >Front</a
-                  >
-                  <a
-                    href="#"
-                    class="btn btn-secondary btn-responsive camera-font"
-                    >Back</a
-                  >
-                  <a href="#" class="btn btn-success btn-responsive camera-font"
-                    >Left</a
-                  >
-                  <a href="#" class="btn btn-danger btn-responsive camera-font"
-                    >Right</a
-                  >
-                  <a href="#" class="btn btn-warning btn-responsive camera-font"
-                    >Top</a
-                  >
-                  <a
-                    href="#"
-                    class="
-                      btn btn-outline-dark
-                      disabled
-                      btn-responsive
-                      camera-font
-                    "
-                    >Off</a
-                  >
+                <h5 class="card-subtitle">Camera Views</h5>
+                <div class="camera-btns">
+                  <p class="card-text">
+                    These buttons select a range of 3D model viewpoints:
+                  </p>
+                  <div class="btn-group">
+                    <a
+                      href="#"
+                      class="btn btn-primary btn-responsive camera-font"
+                      >Front</a
+                    >
+                    <a
+                      href="#"
+                      class="btn btn-secondary btn-responsive camera-font"
+                      >Back</a
+                    >
+                    <a
+                      href="#"
+                      class="btn btn-success btn-responsive camera-font"
+                      >Left</a
+                    >
+                    <a
+                      href="#"
+                      class="btn btn-danger btn-responsive camera-font"
+                      >Right</a
+                    >
+                    <a
+                      href="#"
+                      class="btn btn-warning btn-responsive camera-font"
+                      >Top</a
+                    >
+                    <a
+                      href="#"
+                      class="
+                        btn btn-outline-dark
+                        disabled
+                        btn-responsive
+                        camera-font
+                      "
+                      >Off</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Column to hold 3D image gallery -->
+          <div class="col-sm-3">
+            <div class="card text-left">
+              <div class="card-header gallery-header">Gallery</div>
+              <div class="card-body">
+                <h4 class="card-title">3D Image Gallery</h4>
+                <a href="#">
+                  <img
+                    class="card-img-top img-fluid img-thumbnail"
+                    src="assets/Renders/coke1.png"
+                    alt="Coca Cola"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="card-img-top img-fluid img-thumbnail"
+                    src="assets/Renders/coke2.png"
+                    alt="Coca Cola"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="card-img-top img-fluid img-thumbnail"
+                    src="assets/Renders/coke3.png"
+                    alt="Coca Cola"
+                  />
+                </a>
+                <p class="card-text">
+                  These 3D images of the Coke can are rendered in Blender with
+                  the Cycles render engine
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Column to hold 3D image gallery -->
-        <div class="col-sm-3">
-          <div class="card text-left">
-            <div class="card-header gallery-header">Gallery</div>
-            <div class="card-body">
-              <h4 class="card-title">3D Image Gallery</h4>
-              <a href="#">
-                <img
-                  class="card-img-top img-fluid img-thumbnail"
-                  src="assets/Renders/pepper1.png"
-                  alt="Dr Pepper"
-                />
-              </a>
-              <a href="#">
-                <img
-                  class="card-img-top img-fluid img-thumbnail"
-                  src="assets/Renders/pepper2.png"
-                  alt="Dr Pepper"
-                />
-              </a>
-              <a href="#">
-                <img
-                  class="card-img-top img-fluid img-thumbnail"
-                  src="assets/Renders/pepper3.png"
-                  alt="Dr Pepper"
-                />
-              </a>
-              <p class="card-text">
-                These 3D images of the Coke can, Sprite bottle and Dr Pepper cup
-                are rendered in Blender with the Cycles render engine
-              </p>
+
+        <!-- Row to hold descriptive text -->
+        <div class="row">
+          <!-- Coca Cola Column-->
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Coca Cola</h3>
+                <p class="card-text">
+                  It was 1886, John Pemberton, an Atlanta pharmacist, was
+                  inspired by simple curiosity. One afternoon, he stirred up a
+                  fragrant, caramel-coloured liquid and, when it was done, the
+                  mixture was combined with carbonated water and sampled by
+                  customers who all agreed - this new drink was something
+                  special!
+                </p>
+                <a
+                  href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola"
+                  class="btn btn-primary"
+                  >Find out more ...</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Row to hold descriptive text -->
-      <div class="row">
-        <!-- Coca Cola Column-->
-        <div class="col-sm-12">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Dr Pepper</h3>
-              <p class="card-text">
-                Dr Pepper's unique, sparkling blend of 23 fruit flavours has
-                been around for well over a century and it's still the same,
-                with that distinctive flavour you just can't quite put your
-                tongue on. It was created by Texas pharmacist Charles Alderton
-                in 1885.
-              </p>
-              <a
-                href="http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper"
-                class="btn btn-primary"
-                >Find out more ...</a
-              >
+      <!-- Sprite page block element -->
+      <div id="sprite" class="main_contents">
+        <!-- Row to hold 3D image and gallery cards -->
+        <div class="row">
+          <!-- Column for 3D image -->
+          <div class="col-sm-9">
+            <div class="card text-left">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:swap('coke')">Coke</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="javascript:swap('sprite')"
+                      >Sprite</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:swap('pepper')"
+                      >Dr Pepper</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Sprite Bottle 3D Model</h4>
+                <iframe
+                  class="render"
+                  allowfullscreen
+                  eager
+                  src="https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:8514789833/applications/sprite_bottle_web/sprite_bottle_web.html"
+                ></iframe>
+                <p class="card-text">
+                  This 3D model of a Sprite bottle was modeled in Blender then
+                  exported as a 3D web application using Verge3D. The label was
+                  made using Adobe Illustrator.
+                </p>
+                <h5 class="card-subtitle">Camera Views</h5>
+                <div class="camera-btns">
+                  <p class="card-text">
+                    These buttons select a range of 3D model viewpoints:
+                  </p>
+                  <div class="btn-group">
+                    <a
+                      href="#"
+                      class="btn btn-primary btn-responsive camera-font"
+                      >Front</a
+                    >
+                    <a
+                      href="#"
+                      class="btn btn-secondary btn-responsive camera-font"
+                      >Back</a
+                    >
+                    <a
+                      href="#"
+                      class="btn btn-success btn-responsive camera-font"
+                      >Left</a
+                    >
+                    <a
+                      href="#"
+                      class="btn btn-danger btn-responsive camera-font"
+                      >Right</a
+                    >
+                    <a
+                      href="#"
+                      class="btn btn-warning btn-responsive camera-font"
+                      >Top</a
+                    >
+                    <a
+                      href="#"
+                      class="
+                        btn btn-outline-dark
+                        disabled
+                        btn-responsive
+                        camera-font
+                      "
+                      >Off</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Column to hold 3D image gallery -->
+          <div class="col-sm-3">
+            <div class="card text-left">
+              <div class="card-header gallery-header">Gallery</div>
+              <div class="card-body">
+                <h4 class="card-title">3D Image Gallery</h4>
+                <a href="#">
+                  <img
+                    class="card-img-top img-fluid img-thumbnail"
+                    src="assets/Renders/sprite1.png"
+                    alt="Sprite"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="card-img-top img-fluid img-thumbnail"
+                    src="assets/Renders/sprite2.png"
+                    alt="Sprite"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="card-img-top img-fluid img-thumbnail"
+                    src="assets/Renders/sprite3.png"
+                    alt="Sprite"
+                  />
+                </a>
+                <p class="card-text">
+                  These 3D images of the Sprite bottle are rendered in Blender
+                  with the Cycles render engine
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row to hold descriptive text -->
+        <div class="row">
+          <!-- Sprite Column-->
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Sprite</h3>
+                <p class="card-text">
+                  First introduced in 1961, crisp, refreshing, clean-tasting
+                  Sprite is now the world's leading lemon and lime flavoured
+                  soft drink and is sold in more than 190 different countries.
+                  Sprite Zero, part of our no sugar Zero range, offers the
+                  delicious lemon lime taste of Sprite without the sugar or
+                  calories.
+                </p>
+                <a
+                  href="http://www.coca-cola.co.uk/drinks/sprite/sprite"
+                  class="btn btn-primary"
+                  >Find out more ...</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dr Pepper page block element -->
+      <div id="pepper" class="main_contents">
+        <!-- Row to hold 3D image and gallery cards -->
+        <div class="row">
+          <!-- Column for 3D image -->
+          <div class="col-sm-9">
+            <div class="card text-left">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:swap('coke')">Coke</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:swap('sprite')"
+                      >Sprite</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="javascript:swap('pepper')"
+                      >Dr Pepper</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Coca Cola 3D Model</h4>
+                <iframe
+                  class="render"
+                  allowfullscreen
+                  eager
+                  src="https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:8514789833/applications/dr_pepper_web/dr_pepper_web.html"
+                ></iframe>
+                <p class="card-text">
+                  This 3D model of a Dr Pepper cup was modeled in Blender then
+                  exported as a 3D web application using Verge3D. The label was
+                  made using Adobe Illustrator.
+                </p>
+                <h5 class="card-subtitle">Camera Views</h5>
+                <div class="camera-btns">
+                  <p class="card-text">
+                    These buttons select a range of 3D model viewpoints:
+                  </p>
+                  <div class="btn-group">
+                    <a
+                      href="#"
+                      class="btn btn-primary btn-responsive camera-font"
+                      >Front</a
+                    >
+                    <a
+                      href="#"
+                      class="btn btn-secondary btn-responsive camera-font"
+                      >Back</a
+                    >
+                    <a
+                      href="#"
+                      class="btn btn-success btn-responsive camera-font"
+                      >Left</a
+                    >
+                    <a
+                      href="#"
+                      class="btn btn-danger btn-responsive camera-font"
+                      >Right</a
+                    >
+                    <a
+                      href="#"
+                      class="btn btn-warning btn-responsive camera-font"
+                      >Top</a
+                    >
+                    <a
+                      href="#"
+                      class="
+                        btn btn-outline-dark
+                        disabled
+                        btn-responsive
+                        camera-font
+                      "
+                      >Off</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Column to hold 3D image gallery -->
+          <div class="col-sm-3">
+            <div class="card text-left">
+              <div class="card-header gallery-header">Gallery</div>
+              <div class="card-body">
+                <h4 class="card-title">3D Image Gallery</h4>
+                <a href="#">
+                  <img
+                    class="card-img-top img-fluid img-thumbnail"
+                    src="assets/Renders/pepper1.png"
+                    alt="Dr Pepper"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="card-img-top img-fluid img-thumbnail"
+                    src="assets/Renders/pepper2.png"
+                    alt="Dr Pepper"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="card-img-top img-fluid img-thumbnail"
+                    src="assets/Renders/pepper3.png"
+                    alt="Dr Pepper"
+                  />
+                </a>
+                <p class="card-text">
+                  These 3D images of the Coke can, Sprite bottle and Dr Pepper
+                  cup are rendered in Blender with the Cycles render engine
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row to hold descriptive text -->
+        <div class="row">
+          <!-- Coca Cola Column-->
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Dr Pepper</h3>
+                <p class="card-text">
+                  Dr Pepper's unique, sparkling blend of 23 fruit flavours has
+                  been around for well over a century and it's still the same,
+                  with that distinctive flavour you just can't quite put your
+                  tongue on. It was created by Texas pharmacist Charles Alderton
+                  in 1885.
+                </p>
+                <a
+                  href="http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper"
+                  class="btn btn-primary"
+                  >Find out more ...</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -664,7 +691,7 @@
               style="font-size: 20px; color: rgb(255, 255, 255)"
             ></em
           ></a>
-          <a href=""
+          <a href="https://github.com/198768"
             ><em
               class="fab fa-github-square fa-2x"
               style="font-size: 20px; color: rgb(255, 255, 255)"
