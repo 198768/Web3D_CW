@@ -23,7 +23,7 @@ function selectPage() {
 	$('#pepperDescription').hide(); 
 
 
-	$('#navHome').click(function(){
+	$('navHome').click(function(){
 		$('#home').show();
 		$('#about').hide();
 		$('#coke').hide();
@@ -47,7 +47,7 @@ function selectPage() {
 		$('#pepperDescription').hide(); 	  
 	});
 
-	$('#navCoke').click(function(){
+	$('.navCoke').click(function(){
 		$('#home').hide();
 		$('#about').hide();
         $('#coke').show();
@@ -65,7 +65,7 @@ function selectPage() {
 		$("#creationMethod_pepper").hide(); 
     });
     
-    $('#navSprite').click(function(){
+    $('.navSprite').click(function(){
 		$('#home').hide();
 		$('#about').hide();
 		$('#coke').hide();
@@ -83,7 +83,7 @@ function selectPage() {
 		$("#creationMethod_pepper").hide(); 
     });
     
-    $('#navPepper').click(function(){
+    $('.navPepper').click(function(){
 		$('#home').hide();
 		$('#about').hide();
 		$('#coke').hide();
