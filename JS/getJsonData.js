@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $.getJSON('/Web3D_CW/model/data.json', function (json0bj) { // /Web3D_CW/model/data.json
+    $.getJSON('/model/data.json', function (json0bj) { // /Web3D_CW/model/data.json
         $('#title_home').html('<h2>' + json0bj.pageTextData[0].title + '<h2>');
         $('#subtitle_home').html('<h3>' + json0bj.pageTextData[0].subtitle + '</h3>');
         $('#description_home').html('<p>' + json0bj.pageTextData[0].description + '</p>');

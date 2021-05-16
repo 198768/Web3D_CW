@@ -26,7 +26,7 @@ var response;
 
 $(document).ready(function() {
 	// Set up the path to the PHP function that reads the image directory to find the thumbnail file names
-	var send = "/WEB3D_CW/PHP/hook.php";
+	var send = "/Web3D_CW/PHP/hook.php";
 	console.log(send);
 	// Open the connection to the web server
 	xmlHttp.open("GET", send, true);
