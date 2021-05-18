@@ -42,7 +42,7 @@ $(document).ready(function() {
 			for(var i=0;i<response.length;i++) {
 				// Handler to build the HTML string
 				// Use this to provide a link to the image
-				htmlCode += '<a href="'+ response[i] + ' " data-fancybox data-caption="My X3D model render" > ';
+				htmlCode += '<a href="'+ response[i] + ' " data-fancybox data-caption="My Blender 3D model render" > ';
 				htmlCode += '<img class="card-img-top img-thumbnail" src="' + response[i] + '"/>';
 				htmlCode += '</a>';	
 				console.log(response[i]);		

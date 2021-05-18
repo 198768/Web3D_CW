@@ -1,31 +1,89 @@
 {
     "pageTextData": [
         {
-            "title": "Coca Cola Great Britain", "subtitle": "Founded in 1886 Dr John S Pemberton", "description": "The Coca Cola Company is the world's largest manufacturer, marketer and distributor of non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands."
+            "title": "Coca Cola Great Britain",
+            "subtitle": "Founded in 1886 Dr John S Pemberton",
+            "description": "The Coca Cola Company is the world's largest manufacturer, marketer and distributor of non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands."
         },
         {
-            "title": "Coca Cola", "subtitle": "New York Harbour, 1886", "description": "It was 1886, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special!"
+            "title": "Coca Cola",
+            "subtitle": "New York Harbour, 1886",
+            "description": "It was 1886, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special!"
         },
         {
-            "title": "Sprite", "subtitle": "West Germany, 1959", "description": "First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime flavoured soft drink and is sold in more than 190 different countries. Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories."
+            "title": "Sprite",
+            "subtitle": "West Germany, 1959",
+            "description": "First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime flavoured soft drink and is sold in more than 190 different countries. Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories."
         },
         {
-            "title": "Dr Pepper", "subtitle": "Texas, 1885", "description": "Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a century and it's still the same, with that distinctive flavour you just can't quite put your tongue on. It was created by Texas pharmacist Charles Alderton in 1885."
+            "title": "Dr Pepper",
+            "subtitle": "Texas, 1885",
+            "description": "Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a century and it's still the same, with that distinctive flavour you just can't quite put your tongue on. It was created by Texas pharmacist Charles Alderton in 1885."
         },
         {
-            "web3DModelTitle": "Coca Cola 3D Model", "creationMethod": "This 3D model of a Coca Cola can was modeled in Blender then exported as a 3D web application using Verge3D. It takes a bit longer to load.", "title": "History of Coca Cola", "subtitle": "Atlanta Beginnings", "description": "It was 1886, and in New York Harbour, workers were constructing the Statue of Liberty. Eight hundred miles away, another great American symbol was about to be unveiled. Like many people who change history, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, he carried it a few doors down to Jacobs' Pharmacy. Here, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special. So Jacobs' Pharmacy put it on sale for five cents (about 3p) a glass."
+            "title": "Coca Cola Zero",
+            "subtitle": "USA, 2005",
+            "description": "The drink was introduced in 2005 as Coca-Cola Zero as a new no-calorie cola. In 2017, the formula was modified and the name updated, a change which led to some backlash"
         },
         {
-            "web3DModelTitle": "Sprite 3D Model", "creationMethod": "This 3D model of a Sprite bottle was modeled in Blender then as a 3D web application using Verge3D. The label was made using Adobe Illustrator.", "title": "Sprite - Fanta Klare Zitrone", "subtitle": "First introduced in 1961", "description": "First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime flavoured soft drink and is sold in more than 190 different countries. Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories."
+            "title": "Fanta",
+            "subtitle": "Germany, 1940",
+            "description": "Fanta originated as a Coca-Cola substitute in 1940 due to the American trade embargo of Nazi Germany which affected the availability of Coca-Cola ingredients; the current formulation was developed in Italy."
         },
         {
-            "web3DModelTitle": "Dr Pepper 3D Model", "creationMethod": "This 3D model of a Dr Pepper cup was modeled in Blender then exported as a 3D web application using Verge3D. The label was made using Adobe Illustrator.","title": "Dr Pepper - Liquid Sunshine", "subtitle": "23 fruit flavours", "description": "Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a century and it's still the same, with that distinctive flavour you just can't quite put your tongue on. It was created by Texas pharmacist Charles Alderton in 1885. He gave a sample of the first ever batch to Wade Morrison, a local shop owner, and Mr Morrison instantly agreed to stock the drink. The distinctive, bold taste of Dr Pepper has been popular ever since."
+            "title": "Costa Coffee",
+            "subtitle": "London, 1971",
+            "description": "Served in London since 1971, Costa Coffee's signature blend is the perfect balance of delicate Arabica and strong Robusta beans, slow-roasted for a smooth and nutty flavour and rich aroma."
         },
         {
-            "galleryTitle": "3D Image Gallery", "galleryDescription": "These 3D images of the Coke Can, Sprite Bottle and Dr Pepper Cup are rendered in Blender with the Cycles render engine"
+            "web3DModelTitle": "Coca Cola 3D Model",
+            "creationMethod": "This 3D model of a Coca Cola can was modeled in Blender then exported as a 3D web application using Verge3D. It takes a bit longer to load.",
+            "title": "History of Coca Cola",
+            "subtitle": "Atlanta Beginnings",
+            "description": "It was 1886, and in New York Harbour, workers were constructing the Statue of Liberty. Eight hundred miles away, another great American symbol was about to be unveiled. Like many people who change history, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, he carried it a few doors down to Jacobs' Pharmacy. Here, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special. So Jacobs' Pharmacy put it on sale for five cents (about 3p) a glass."
         },
         {
-            "cameraTitle": "Camera Views", "cameraSubtitle": "These buttons select a range of 3D model viewpoints"
+            "web3DModelTitle": "Sprite 3D Model",
+            "creationMethod": "This 3D model of a Sprite bottle was modeled in Blender then as a 3D web application using Verge3D. The label was made using Adobe Illustrator.",
+            "title": "Sprite - Fanta Klare Zitrone",
+            "subtitle": "First introduced in 1961",
+            "description": "First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime flavoured soft drink and is sold in more than 190 different countries. Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories."
+        },
+        {
+            "web3DModelTitle": "Dr Pepper 3D Model",
+            "creationMethod": "This 3D model of a Dr Pepper cup was modeled in Blender then exported as a 3D web application using Verge3D. The label was made using Adobe Illustrator.",
+            "title": "Dr Pepper - Liquid Sunshine",
+            "subtitle": "23 fruit flavours",
+            "description": "Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a century and it's still the same, with that distinctive flavour you just can't quite put your tongue on. It was created by Texas pharmacist Charles Alderton in 1885. He gave a sample of the first ever batch to Wade Morrison, a local shop owner, and Mr Morrison instantly agreed to stock the drink. The distinctive, bold taste of Dr Pepper has been popular ever since."
+        },
+        {
+            "web3DModelTitle": "Coke Zero 3D Model",
+            "creationMethod": "This 3D model of a Coca Cola Zero Bottle was modeled in Blender then exported as a 3D web application using Verge3D. The label was made using Adobe Illustrator.",
+            "title": "History of Coca Cola",
+            "subtitle": "Atlanta Beginnings",
+            "description": "The drink was introduced in 2005 as Coca-Cola Zero as a new no-calorie cola. In 2017, the formula was modified and the name updated, a change which led to some backlash"
+        },
+        {
+            "web3DModelTitle": "Fanta 3D Model",
+            "creationMethod": "This 3D model of a Fanta Can was modeled in Blender then as a 3D web application using Verge3D. The label was made using Adobe Illustrator.",
+            "title": "Fanta's History",
+            "subtitle": "II. World War Origins",
+            "description": "Fanta originated as a Coca-Cola substitute in 1940 due to the American trade embargo of Nazi Germany which affected the availability of Coca-Cola ingredients; the current formulation was developed in Italy."
+        },
+        {
+            "web3DModelTitle": "Costa Coffee 3D Model",
+            "creationMethod": "This 3D model of a Costa Coffee cup was modeled in Blender then exported as a 3D web application using Verge3D. The label was made using Adobe Illustrator.",
+            "title": "Costa Coffee",
+            "subtitle": "A Family Affair",
+            "description": "Costa Coffee was founded in London in 1971 by two brothers Bruno and Sergio Costa as a wholesale operation supplying roasted coffee to caterers and specialist Italian coffee shops. Costa Coffee's signature blend is the perfect balance of delicate Arabica and strong Robusta beans, slow-roasted for a smooth and nutty flavour and rich aroma."
+        },
+        {
+            "galleryTitle": "3D Image Gallery",
+            "galleryDescription": "These 3D images of the Coke Can, Sprite Bottle, Dr Pepper Cup, Coca Cola Zero Bottle, Fanta Can and Costa Coffee Cup are rendered in Blender with the Cycles render engine"
+        },
+        {
+            "cameraTitle": "Camera Views",
+            "cameraSubtitle": "These buttons select a range of 3D model viewpoints"
         }
     ]
 }

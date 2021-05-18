@@ -16,23 +16,35 @@ function selectPage() {
 	$('#about').hide();
 	$('#coke').hide();
     $('#sprite').hide();
-    $('#pepper').hide();
+	$('#pepper').hide();
+	$('#zero').hide();
+    $('#fanta').hide();
+    $('#costa').hide();
 	$('#interaction').hide();
-	$('#cokeDescription').hide();
-	$('#spriteDescription').hide(); 
-	$('#pepperDescription').hide(); 
+	$('#description_coke').hide();
+	$('#description_sprite').hide(); 
+	$('#description_pepper').hide();
+	$('#description_zero').hide();
+	$('#description_fanta').hide();
+	$('#description_costa').hide();
 
 
-	$('navHome').click(function(){
+	$('.navHome').click(function(){
 		$('#home').show();
 		$('#about').hide();
 		$('#coke').hide();
         $('#sprite').hide();
-        $('#pepper').hide();
+		$('#pepper').hide();
+		$('#zero').hide();
+    	$('#fanta').hide();
+    	$('#costa').hide();
 		$('#interaction').hide();
-		$('#cokeDescription').hide();
-		$('#spriteDescription').hide(); 
-		$('#pepperDescription').hide(); 	  
+		$('#description_coke').hide();
+		$('#description_sprite').hide(); 
+		$('#description_pepper').hide();
+		$('#description_zero').hide();
+		$('#description_fanta').hide();
+		$('#description_costa').hide();
 	});
 
 	$('#navAbout').click(function(){
@@ -40,11 +52,17 @@ function selectPage() {
 		$('#about').show();
 		$('#coke').hide();
         $('#sprite').hide();
-        $('#pepper').hide();
+		$('#pepper').hide();
+		$('#zero').hide();
+    	$('#fanta').hide();
+    	$('#costa').hide();
 		$('#interaction').hide();
-		$('#cokeDescription').hide();
-		$('#spriteDescription').hide(); 
-		$('#pepperDescription').hide(); 	  
+		$('#description_coke').hide();
+		$('#description_sprite').hide(); 
+		$('#description_pepper').hide();
+		$('#description_zero').hide();
+		$('#description_fanta').hide();
+		$('#description_costa').hide();
 	});
 
 	$('.navCoke').click(function(){
@@ -52,17 +70,29 @@ function selectPage() {
 		$('#about').hide();
         $('#coke').show();
         $('#sprite').hide();
-        $('#pepper').hide();
+		$('#pepper').hide();
+		$('#zero').hide();
+    	$('#fanta').hide();
+    	$('#costa').hide();
 		$('#interaction').show(); 
-		$('#cokeDescription').show();
-		$('#spriteDescription').hide(); 
-		$('#pepperDescription').hide();
-		$("#web3DModelTitle_coke").show();
-		$("#web3DModelTitle_coke").hide();
-		$("#web3DModelTitle_coke").hide();
+		$('#description_coke').show();
+		$('#description_sprite').hide(); 
+		$('#description_pepper').hide();
+		$('#description_zero').hide();
+		$('#description_fanta').hide();
+		$('#description_costa').hide();
+		$("#model3DTitle_coke").show();
+		$("#model3DTitle_sprite").hide();
+		$("#model3DTitle_pepper").hide();
+		$("#model3DTitle_zero").hide();
+		$("#model3DTitle_fanta").hide();
+		$("#model3DTitle_costa").hide();
 		$("#creationMethod_coke").show();
 		$("#creationMethod_sprite").hide();
-		$("#creationMethod_pepper").hide(); 
+		$("#creationMethod_pepper").hide();
+		$("#creationMethod_zero").hide();
+		$("#creationMethod_fanta").hide();
+		$("#creationMethod_costa").hide();
     });
     
     $('.navSprite').click(function(){
@@ -70,17 +100,29 @@ function selectPage() {
 		$('#about').hide();
 		$('#coke').hide();
         $('#sprite').show();
-        $('#pepper').hide();
+		$('#pepper').hide();
+		$('#zero').hide();
+    	$('#fanta').hide();
+    	$('#costa').hide();
 		$('#interaction').show(); 
-		$('#cokeDescription').show();
-		$('#spriteDescription').hide(); 
-		$('#pepperDescription').hide();
-		$("#web3DModelTitle_coke").show();
-		$("#web3DModelTitle_coke").hide();
-		$("#web3DModelTitle_coke").hide();
-		$("#creationMethod_coke").show();
-		$("#creationMethod_sprite").hide();
-		$("#creationMethod_pepper").hide(); 
+		$('#description_coke').hide();
+		$('#description_sprite').show(); 
+		$('#description_pepper').hide();
+		$('#description_zero').hide();
+		$('#description_fanta').hide();
+		$('#description_costa').hide();
+		$("#model3DTitle_coke").hide();
+		$("#model3DTitle_sprite").show();
+		$("#model3DTitle_pepper").hide();
+		$("#model3DTitle_zero").hide();
+		$("#model3DTitle_fanta").hide();
+		$("#model3DTitle_costa").hide();
+		$("#creationMethod_coke").hide();
+		$("#creationMethod_sprite").show();
+		$("#creationMethod_pepper").hide();
+		$("#creationMethod_zero").hide();
+		$("#creationMethod_fanta").hide();
+		$("#creationMethod_costa").hide(); 
     });
     
     $('.navPepper').click(function(){
@@ -88,17 +130,119 @@ function selectPage() {
 		$('#about').hide();
 		$('#coke').hide();
         $('#sprite').hide();
-        $('#pepper').show();
+		$('#pepper').show();
+		$('#zero').hide();
+    	$('#fanta').hide();
+    	$('#costa').hide();
 		$('#interaction').show(); 
-		$('#cokeDescription').show();
-		$('#spriteDescription').hide(); 
-		$('#pepperDescription').hide();
-		$("web3DModelTitle_coke").show();
-		$("#web3DModelTitle_sprite").hide();
-		$("#web3DModelTitle_pepper").hide();
-		$("#creationMethod_coke").show();
+		$('#description_coke').hide();
+		$('#description_sprite').hide(); 
+		$('#description_pepper').show();
+		$('#description_zero').hide();
+		$('#description_fanta').hide();
+		$('#description_costa').hide();
+		$("#model3DTitle_coke").hide();
+		$("#model3DTitle_sprite").hide();
+		$("#model3DTitle_pepper").show();
+		$("#model3DTitle_zero").hide();
+		$("#model3DTitle_fanta").hide();
+		$("#model3DTitle_costa").hide();
+		$("#creationMethod_coke").hide();
 		$("#creationMethod_sprite").hide();
-		$("#creationMethod_pepper").hide(); 
+		$("#creationMethod_pepper").show();
+		$("#creationMethod_zero").hide();
+		$("#creationMethod_fanta").hide();
+		$("#creationMethod_costa").hide(); 
+	});
+
+	$('.navZero').click(function(){
+		$('#home').hide();
+		$('#about').hide();
+		$('#coke').hide();
+        $('#sprite').hide();
+		$('#pepper').hide();
+		$('#zero').show();
+    	$('#fanta').hide();
+    	$('#costa').hide();
+		$('#interaction').show(); 
+		$('#description_coke').hide();
+		$('#description_sprite').hide(); 
+		$('#description_pepper').hide();
+		$('#description_zero').show();
+		$('#description_fanta').hide();
+		$('#description_costa').hide();
+		$("#model3DTitle_coke").hide();
+		$("#model3DTitle_sprite").hide();
+		$("#model3DTitle_pepper").hide();
+		$("#model3DTitle_zero").show();
+		$("#model3DTitle_fanta").hide();
+		$("#model3DTitle_costa").hide();
+		$("#creationMethod_coke").hide();
+		$("#creationMethod_sprite").hide();
+		$("#creationMethod_pepper").hide();
+		$("#creationMethod_zero").show();
+		$("#creationMethod_fanta").hide();
+		$("#creationMethod_costa").hide(); 
+	});
+
+	$('.navFanta').click(function(){
+		$('#home').hide();
+		$('#about').hide();
+		$('#coke').hide();
+        $('#sprite').hide();
+		$('#pepper').hide();
+		$('#zero').hide();
+    	$('#fanta').show();
+    	$('#costa').hide();
+		$('#interaction').show(); 
+		$('#description_coke').hide();
+		$('#description_sprite').hide(); 
+		$('#description_pepper').hide();
+		$('#description_zero').hide();
+		$('#description_fanta').show();
+		$('#description_costa').hide();
+		$("#model3DTitle_coke").hide();
+		$("#model3DTitle_sprite").hide();
+		$("#model3DTitle_pepper").hide();
+		$("#model3DTitle_zero").hide();
+		$("#model3DTitle_fanta").show();
+		$("#model3DTitle_costa").hide();
+		$("#creationMethod_coke").hide();
+		$("#creationMethod_sprite").hide();
+		$("#creationMethod_pepper").hide();
+		$("#creationMethod_zero").hide();
+		$("#creationMethod_fanta").show();
+		$("#creationMethod_costa").hide(); 
+	});
+
+	$('.navCosta').click(function(){
+		$('#home').hide();
+		$('#about').hide();
+		$('#coke').hide();
+        $('#sprite').hide();
+		$('#pepper').hide();
+		$('#zero').hide();
+    	$('#fanta').hide();
+    	$('#costa').show();
+		$('#interaction').show(); 
+		$('#description_coke').hide();
+		$('#description_sprite').hide(); 
+		$('#description_pepper').hide();
+		$('#description_zero').hide();
+		$('#description_fanta').hide();
+		$('#description_costa').show();
+		$("#model3DTitle_coke").hide();
+		$("#model3DTitle_sprite").hide();
+		$("#model3DTitle_pepper").hide();
+		$("#model3DTitle_zero").hide();
+		$("#model3DTitle_fanta").hide();
+		$("#model3DTitle_costa").show();
+		$("#creationMethod_coke").hide();
+		$("#creationMethod_sprite").hide();
+		$("#creationMethod_pepper").hide();
+		$("#creationMethod_zero").hide();
+		$("#creationMethod_fanta").hide();
+		$("#creationMethod_costa").show(); 
 	});
 }
 
@@ -106,17 +250,24 @@ function selectPage() {
 function cokeDescription() {
 	$("button").click(function(){
 		
-		$("#cokeDescription").show();
-        $("#spriteDescription").hide();
-		$("#pepperDescription").hide();
-		
-		$("#x3dModelTitle_coke").show();
-		$("#x3dModelTitle_sprite").hide();
-		$("#x3dModelTitle_pepper").hide();
-
-		$("#x3dCreationMethod_coke").show();
-		$("#x3dCreationMethod_sprite").hide();
-		$("#x3dCreationMethod_pepper").hide();
+		$('#description_coke').show();
+		$('#description_sprite').hide(); 
+		$('#description_pepper').hide();
+		$('#description_zero').hide();
+		$('#description_fanta').hide();
+		$('#description_costa').hide();
+		$("#model3DTitle_coke").show();
+		$("#model3DTitle_sprite").hide();
+		$("#model3DTitle_pepper").hide();
+		$("#model3DTitle_zero").hide();
+		$("#model3DTitle_fanta").hide();
+		$("#model3DTitle_costa").hide();
+		$("#creationMethod_coke").show();
+		$("#creationMethod_sprite").hide();
+		$("#creationMethod_pepper").hide();
+		$("#creationMethod_zero").hide();
+		$("#creationMethod_fanta").hide();
+		$("#creationMethod_costa").hide();
 
     }); 
 }
@@ -124,34 +275,120 @@ function cokeDescription() {
 function spriteDescription() {
     $("button").click(function(){
 
-        $("#cokeDescription").hide();
-        $("#spriteDescription").show();
-		$("#pepperDescription").hide();
-		
-		$("#x3dModelTitle_coke").hide();
-		$("#x3dModelTitle_sprite").show();
-		$("#x3dModelTitle_pepper").hide();
-
-		$("#x3dCreationMethod_coke").hide();
-		$("#x3dCreationMethod_sprite").show();
-		$("#x3dCreationMethod_pepper").hide();
+        $('#description_coke').hide();
+		$('#description_sprite').show(); 
+		$('#description_pepper').hide();
+		$('#description_zero').hide();
+		$('#description_fanta').hide();
+		$('#description_costa').hide();
+		$("#model3DTitle_coke").hide();
+		$("#model3DTitle_sprite").show();
+		$("#model3DTitle_pepper").hide();
+		$("#model3DTitle_zero").hide();
+		$("#model3DTitle_fanta").hide();
+		$("#model3DTitle_costa").hide();
+		$("#creationMethod_coke").hide();
+		$("#creationMethod_sprite").show();
+		$("#creationMethod_pepper").hide();
+		$("#creationMethod_zero").hide();
+		$("#creationMethod_fanta").hide();
+		$("#creationMethod_costa").hide();
     }); 
 }
 
 function pepperDescription() {
     $("button").click(function(){
 
-        $("#cokeDescription").hide();
-        $("#spriteDescription").hide();
-		$("#pepperDescription").show();
-		
-		$("#x3dModelTitle_coke").hide();
-		$("#x3dModelTitle_sprite").hide();
-		$("#x3dModelTitle_pepper").show();
+        $('#description_coke').hide();
+		$('#description_sprite').hide(); 
+		$('#description_pepper').show();
+		$('#description_zero').hide();
+		$('#description_fanta').hide();
+		$('#description_costa').hide();
+		$("#model3DTitle_coke").hide();
+		$("#model3DTitle_sprite").hide();
+		$("#model3DTitle_pepper").show();
+		$("#model3DTitle_zero").hide();
+		$("#model3DTitle_fanta").hide();
+		$("#model3DTitle_costa").hide();
+		$("#creationMethod_coke").hide();
+		$("#creationMethod_sprite").hide();
+		$("#creationMethod_pepper").show();
+		$("#creationMethod_zero").hide();
+		$("#creationMethod_fanta").hide();
+		$("#creationMethod_costa").hide();
+    }); 
+}
 
-		$("#x3dCreationMethod_coke").hide();
-		$("#x3dCreationMethod_sprite").hide();
-		$("#x3dCreationMethod_pepper").show();
+function zeroDescription() {
+    $("button").click(function(){
+
+        $('#description_coke').hide();
+		$('#description_sprite').hide(); 
+		$('#description_pepper').hide();
+		$('#description_zero').show();
+		$('#description_fanta').hide();
+		$('#description_costa').hide();
+		$("#model3DTitle_coke").hide();
+		$("#model3DTitle_sprite").hide();
+		$("#model3DTitle_pepper").hide();
+		$("#model3DTitle_zero").show();
+		$("#model3DTitle_fanta").hide();
+		$("#model3DTitle_costa").hide();
+		$("#creationMethod_coke").hide();
+		$("#creationMethod_sprite").hide();
+		$("#creationMethod_pepper").hide();
+		$("#creationMethod_zero").show();
+		$("#creationMethod_fanta").hide();
+		$("#creationMethod_costa").hide();
+    }); 
+}
+
+function fantaDescription() {
+    $("button").click(function(){
+
+        $('#description_coke').hide();
+		$('#description_sprite').hide(); 
+		$('#description_pepper').hide();
+		$('#description_zero').hide();
+		$('#description_fanta').show();
+		$('#description_costa').hide();
+		$("#model3DTitle_coke").hide();
+		$("#model3DTitle_sprite").hide();
+		$("#model3DTitle_pepper").hide();
+		$("#model3DTitle_zero").hide();
+		$("#model3DTitle_fanta").show();
+		$("#model3DTitle_costa").hide();
+		$("#creationMethod_coke").hide();
+		$("#creationMethod_sprite").hide();
+		$("#creationMethod_pepper").hide();
+		$("#creationMethod_zero").hide();
+		$("#creationMethod_fanta").show();
+		$("#creationMethod_costa").hide();
+    }); 
+}
+
+function costaDescription() {
+    $("button").click(function(){
+
+        $('#description_coke').hide();
+		$('#description_sprite').hide(); 
+		$('#description_pepper').hide();
+		$('#description_zero').hide();
+		$('#description_fanta').hide();
+		$('#description_costa').show();
+		$("#model3DTitle_coke").hide();
+		$("#model3DTitle_sprite").hide();
+		$("#model3DTitle_pepper").hide();
+		$("#model3DTitle_zero").hide();
+		$("#model3DTitle_fanta").hide();
+		$("#model3DTitle_costa").show();
+		$("#creationMethod_coke").hide();
+		$("#creationMethod_sprite").hide();
+		$("#creationMethod_pepper").hide();
+		$("#creationMethod_zero").hide();
+		$("#creationMethod_fanta").hide();
+		$("#creationMethod_costa").show();
     }); 
 }
 
