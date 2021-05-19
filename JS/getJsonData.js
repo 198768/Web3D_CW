@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $.getJSON('/model/data.json', function (jsonObj) {
+    $.getJSON('model/data.json', function (jsonObj) {
         //Main text of home page
         $('#title_home').html('<h2>' + jsonObj.pageTextData[0].title + '</h2>');
         $('#subtitle_home').html('<h3>' + jsonObj.pageTextData[0].subtitle + '</h3>');

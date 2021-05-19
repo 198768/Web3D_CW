@@ -1,16 +1,16 @@
 @font-face {
   font-family: "cocaColaFont";
-  src: url("/assets/fonts/loki_cola/LOKICOLA.TTF");
+  src: url("../assets/fonts/loki_cola/LOKICOLA.TTF");
 }
 
 @font-face {
   font-family: "Open_Sans";
-  src: url("/assets/fonts/Open_Sans/OpenSans-Regular.ttf");
+  src: url("../assets/fonts/Open_Sans/OpenSans-Regular.ttf");
 }
 
 @font-face {
   font-family: "Oswald";
-  src: url("/assets/fonts/Oswald/static/Oswald-Regular.ttf");
+  src: url("../assets/fonts/Oswald/static/Oswald-Regular.ttf");
 }
 
 body {
@@ -154,7 +154,6 @@ body {
 .gallery {
   width: 100%;
   border: none;
-  height: 1150px;
 }
 
 .gallery .img-thumbnail {
@@ -182,7 +181,7 @@ h6 {
 }
 
 #main_3d_image {
-  background-image: url("/assets/images/backgound.png");
+  background-image: url("../assets/images/backgound.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
