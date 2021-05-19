@@ -24,7 +24,7 @@ body {
 }
 
 .navbar_coca_cola .navbar-brand {
-  color: rgb(245, 235, 235);
+  color: rgb(255, 255, 255);
 }
 
 .navbar_coca_cola .navbar-brand:hover {
@@ -136,11 +136,35 @@ body {
   margin-bottom: 10px;
 }
 
+.link3D > .nav-link {
+  color: rgb(128, 128, 128);
+}
+
+.link3D > .active {
+  font-weight: 600;
+}
+
 .card {
   border: 1px solid rgba(0, 0, 0, 0.125);
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: rgb(255, 255, 255);
+}
+
+.gallery {
+  width: 100%;
+  border: none;
+  height: 1150px;
+}
+
+.gallery .img-thumbnail {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0.25rem;
+  margin: 2px;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 43%;
+  height: auto;
 }
 
 p {
@@ -181,7 +205,7 @@ h6 {
 }
 
 #main_text h2 {
-  color: rgb(0, 143, 214);
+  color: rgb(255, 1, 1);
   font-size: 20px;
   margin-top: 0px;
   margin-bottom: 5px;
@@ -211,7 +235,7 @@ h6 {
 
 .footer {
   color: white;
-  background-color: black; /* Set navbar footer background color same as header */
+  background-color: black;
   height: 50px;
 }
 
@@ -243,7 +267,6 @@ h6 {
     min-height: 90px;
   }
 
-  /* CSS rule to style the footer */
   .footer {
     background-color: black;
     height: 60px;
@@ -317,12 +340,10 @@ h6 {
   }
 
   #main_text h2 {
-    color: crimson;
     font-size: 30px;
   }
 
   #main_text h3 {
-    color: darkcyan;
     font-size: 22px;
   }
 
@@ -355,12 +376,10 @@ h6 {
 
 @media (min-width: 992px) {
   #main_text h2 {
-    color: rgb(0, 153, 20);
     font-size: 30px;
   }
 
   #main_text h3 {
-    color: rgb(255, 139, 6);
     font-size: 22px;
   }
 
@@ -383,12 +402,10 @@ h6 {
 
 @media (min-width: 1200px) {
   #main_text h2 {
-    color: rgb(0, 2, 0);
     font-size: 30px;
   }
 
   #main_text h3 {
-    color: rgb(23, 6, 255);
     font-size: 22px;
   }
 
@@ -411,12 +428,10 @@ h6 {
 
 @media (min-width: 1400px) {
   #main_text h2 {
-    color: rgb(247, 5, 255);
     font-size: 30px;
   }
 
   #main_text h3 {
-    color: rgb(6, 197, 255);
     font-size: 22px;
   }
 

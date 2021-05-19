@@ -1,4 +1,7 @@
 <?php
+include 'application/debug/ChromePhp.php';
+ChromePhp::log('controller.php: Hello World');
+ChromePhp::log($_SERVER);
 class Controller {
     public $load;
     public $model;
@@ -11,16 +14,45 @@ class Controller {
 
     function home() {
         $data = $this->model->model3D_info();
-        $this->load->view('view3DAppTest', $data);
+        $this->load->view('view3DAppTest_2', $data);
     }
+
+    function apiCreateTable() {
+        $data = $this->model->dbCreateTable();
+        $this->load->view('viewMessage', $data);
+    }
+
+    function apiInsertData() {
+        $data = $this->model->dbInsertData();
+        $this->load->view('viewMessage', $data);
+    }
+
+    function apiGetData() {
+        $data = $this->model->dbGetData();
+        $this->load->view('view3DAppData', $data);
+    }
+
     function dbCreateTable() {
         echo "Create table function";
     }
+
     function dbInsertData() {
         echo "Data insertion function";
     }
+
     function dbGetData() {
         echo "Data retrieval function";
+    }
+
+    function apiGetFlickrService() {
+        $this->load->view('viewFlickrService');
+    }
+
+    function apiLoadImage() {
+        ChromePhp::warn('controller.php: [apiLoadImage] Get the Brand Data');
+        $data = $this->model->dbGetBrand();
+        ChromePhp::log($data);
+        $this->load->view('viewDrinks', $data);
     }
 }
 ?>

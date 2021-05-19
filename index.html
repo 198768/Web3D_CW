@@ -74,7 +74,7 @@
         <div class="navbar-collapse collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a id="navHome" class="nav-link active" href="#">Home</a>
+              <a class="nav-link navHome active" href="#">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -87,7 +87,10 @@
               <div class="dropdown-menu">
                 <a class="dropdown-item navCoke" href="#">Coca Cola</a>
                 <a class="dropdown-item navSprite" href="#">Sprite</a>
-                <a class="dropdown-item navSprite" href="#">Dr Pepper</a>
+                <a class="dropdown-item navPepper" href="#">Dr Pepper</a>
+                <a class="dropdown-item navZero" href="#">Coke Zero</a>
+                <a class="dropdown-item navFanta" href="#">Fanta</a>
+                <a class="dropdown-item navCosta" href="#">Costa Coffee</a>
               </div>
             </li>
             <li class="nav-item">
@@ -124,7 +127,7 @@
           </div>
         </div>
 
-        <!-- Row of cards -->
+        <!-- First row of cards -->
         <div class="row">
           <!-- Coca Cola Column-->
           <div class="col-sm-4">
@@ -210,6 +213,111 @@
             </div>
           </div>
         </div>
+
+        <!-- Second row of cards -->
+        <div class="row">
+          <!-- Coca Cola Column-->
+          <div class="col-sm-4">
+            <div class="card">
+              <a
+                href="assets/Renders/coke_bottle1.png"
+                data-fancybox
+                data-caption="My 3D Coke Zero Bottle Render"
+                class="thumbnail"
+              >
+                <img
+                  class="card-img-top img-fluid img-thumbnail"
+                  src="assets/images/coke_zero.jpg"
+                  alt="Coca Cola"
+                />
+              </a>
+              <div class="card-body">
+                <div id="title_bottom_left" class="card-title homeText"></div>
+                <div
+                  id="subtitle_bottom_left"
+                  class="card-subtitle homeText"
+                ></div>
+                <div
+                  id="description_bottom_left"
+                  class="card-text homeText"
+                ></div>
+                <a
+                  href="https://www.coca-cola.co.uk/brands/coca-cola-zero-sugar"
+                  class="btn btn-primary"
+                  >Find out more ...</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Sprite Column -->
+          <div class="col-sm-4">
+            <div class="card">
+              <a
+                href="assets/Renders/fanta1.png"
+                data-fancybox
+                data-caption="My 3D Fanta Can Render"
+                class="thumbnail"
+              >
+                <img
+                  class="card-img-top img-fluid img-thumbnail"
+                  src="assets/images/fanta.jpg"
+                  alt="Fanta"
+                />
+              </a>
+              <div class="card-body">
+                <div id="title_bottom_centre" class="card-title homeText"></div>
+                <div
+                  id="subtitle_bottom_centre"
+                  class="card-subtitle homeText"
+                ></div>
+                <div
+                  id="description_bottom_centre"
+                  class="card-text homeText"
+                ></div>
+                <a
+                  href="https://www.coca-cola.co.uk/brands/fanta"
+                  class="btn btn-primary"
+                  >Find out more ...</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Dr Pepper Column -->
+          <div class="col-sm-4">
+            <div class="card">
+              <a
+                href="assets/Renders/costa1.png"
+                data-fancybox
+                data-caption="My 3D Costa Coffee Cup Render"
+                class="thumbnail"
+              >
+                <img
+                  class="card-img-top img-fluid img-thumbnail"
+                  src="assets/images/costa.jpg"
+                  alt="Costa Coffee"
+                />
+              </a>
+              <div class="card-body">
+                <div id="title_bottom_right" class="card-title homeText"></div>
+                <div
+                  id="subtitle_bottom_right"
+                  class="card-subtitle homeText"
+                ></div>
+                <div
+                  id="description_bottom_right"
+                  class="card-text homeText"
+                ></div>
+                <a
+                  href="https://www.coca-cola.co.uk/brands/costa-coffee"
+                  class="btn btn-primary"
+                  >Find out more ...</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- About page contents -->
@@ -224,71 +332,78 @@
             <div class="card text-left">
               <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
-                  <li class="nav-item">
-                    <a class="nav-link navCoke active" href="#">Coke</a>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navCoke active" href="#"
+                      >Coke Original</a
+                    >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item link3D">
                     <a class="nav-link navSprite" href="#">Sprite</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item link3D">
                     <a class="nav-link navPepper" href="#">Dr Pepper</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navZero" href="#">Coke Zero</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navFanta" href="#">Fanta</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navCosta" href="#">Costa Coffee</a>
                   </li>
                 </ul>
               </div>
               <div class="card-body">
-                <h4 class="card-title">Coca Cola 3D Model</h4>
+                <div id="model3DTitle_coke" class="card-title"></div>
                 <iframe
                   class="render"
                   allowfullscreen
                   eager
                   src="https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:8514789833/applications/coke_can/coke_can.html"
                 ></iframe>
-                <p class="card-text">
-                  This 3D model of a Coca Cola can was modeled in Blender then
-                  exported as a 3D web application using Verge3D. It takes a bit
-                  longer to load.
-                </p>
-                <h5 class="card-subtitle">Camera Views</h5>
-                <div class="camera-btns">
-                  <p class="card-text">
-                    These buttons select a range of 3D model viewpoints:
-                  </p>
-                  <div class="btn-group">
-                    <a
-                      href="#"
-                      class="btn btn-primary btn-responsive camera-font"
-                      >Front</a
-                    >
-                    <a
-                      href="#"
-                      class="btn btn-secondary btn-responsive camera-font"
-                      >Back</a
-                    >
-                    <a
-                      href="#"
-                      class="btn btn-success btn-responsive camera-font"
-                      >Left</a
-                    >
-                    <a
-                      href="#"
-                      class="btn btn-danger btn-responsive camera-font"
-                      >Right</a
-                    >
-                    <a
-                      href="#"
-                      class="btn btn-warning btn-responsive camera-font"
-                      >Top</a
-                    >
-                    <a
-                      href="#"
-                      class="
-                        btn btn-outline-dark
-                        disabled
-                        btn-responsive
-                        camera-font
-                      "
-                      >Off</a
-                    >
+                <div id="creationMethod_coke" class="card-text"></div>
+                <div class="card-body">
+                  <div class="card-title camera_title"></div>
+                  <div class="camera-btns">
+                    <div class="card-subtitle camera_subtitle"></div>
+                    <div class="btn-group">
+                      <a
+                        href="#"
+                        class="btn btn-primary btn-responsive camera-font"
+                        >Front</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-secondary btn-responsive camera-font"
+                        >Back</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-success btn-responsive camera-font"
+                        >Left</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-danger btn-responsive camera-font"
+                        >Right</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-warning btn-responsive camera-font"
+                        >Top</a
+                      >
+                      <a
+                        href="#"
+                        class="
+                          btn btn-outline-dark
+                          disabled
+                          btn-responsive
+                          camera-font
+                        "
+                        >Off</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -299,32 +414,9 @@
             <div class="card text-left">
               <div class="card-header gallery-header">Gallery</div>
               <div class="card-body">
-                <h4 class="card-title">3D Image Gallery</h4>
-                <a href="#">
-                  <img
-                    class="card-img-top img-fluid img-thumbnail"
-                    src="assets/Renders/coke1.png"
-                    alt="Coca Cola"
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    class="card-img-top img-fluid img-thumbnail"
-                    src="assets/Renders/coke2.png"
-                    alt="Coca Cola"
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    class="card-img-top img-fluid img-thumbnail"
-                    src="assets/Renders/coke3.png"
-                    alt="Coca Cola"
-                  />
-                </a>
-                <p class="card-text">
-                  These 3D images of the Coke can are rendered in Blender with
-                  the Cycles render engine
-                </p>
+                <div class="card-title gallery_title"></div>
+                <div class="gallery" id="gallery"></div>
+                <div class="card-text gallery_description"></div>
               </div>
             </div>
           </div>
@@ -336,15 +428,9 @@
           <div class="col-sm-12">
             <div class="card">
               <div class="card-body">
-                <h3 class="card-title">Coca Cola</h3>
-                <p class="card-text">
-                  It was 1886, John Pemberton, an Atlanta pharmacist, was
-                  inspired by simple curiosity. One afternoon, he stirred up a
-                  fragrant, caramel-coloured liquid and, when it was done, the
-                  mixture was combined with carbonated water and sampled by
-                  customers who all agreed - this new drink was something
-                  special!
-                </p>
+                <div id="title_coke" class="card-title"></div>
+                <div id="subtitle_coke" class="card-subtitle"></div>
+                <div id="description_coke" class="card-text"></div>
                 <a
                   href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola"
                   class="btn btn-primary"
@@ -365,71 +451,76 @@
             <div class="card text-left">
               <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
-                  <li class="nav-item">
-                    <a class="nav-link navCoke" href="#">Coke</a>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navCoke" href="#">Coke Original</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item link3D">
                     <a class="nav-link navSprite active" href="#">Sprite</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item link3D">
                     <a class="nav-link navPepper" href="#">Dr Pepper</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navZero" href="#">Coke Zero</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navFanta" href="#">Fanta</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navCosta" href="#">Costa Coffee</a>
                   </li>
                 </ul>
               </div>
               <div class="card-body">
-                <h4 class="card-title">Sprite Bottle 3D Model</h4>
+                <div id="model3DTitle_sprite" class="card-title"></div>
                 <iframe
                   class="render"
                   allowfullscreen
                   eager
                   src="https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:8514789833/applications/sprite_bottle_web/sprite_bottle_web.html"
                 ></iframe>
-                <p class="card-text">
-                  This 3D model of a Sprite bottle was modeled in Blender then
-                  exported as a 3D web application using Verge3D. The label was
-                  made using Adobe Illustrator.
-                </p>
-                <h5 class="card-subtitle">Camera Views</h5>
-                <div class="camera-btns">
-                  <p class="card-text">
-                    These buttons select a range of 3D model viewpoints:
-                  </p>
-                  <div class="btn-group">
-                    <a
-                      href="#"
-                      class="btn btn-primary btn-responsive camera-font"
-                      >Front</a
-                    >
-                    <a
-                      href="#"
-                      class="btn btn-secondary btn-responsive camera-font"
-                      >Back</a
-                    >
-                    <a
-                      href="#"
-                      class="btn btn-success btn-responsive camera-font"
-                      >Left</a
-                    >
-                    <a
-                      href="#"
-                      class="btn btn-danger btn-responsive camera-font"
-                      >Right</a
-                    >
-                    <a
-                      href="#"
-                      class="btn btn-warning btn-responsive camera-font"
-                      >Top</a
-                    >
-                    <a
-                      href="#"
-                      class="
-                        btn btn-outline-dark
-                        disabled
-                        btn-responsive
-                        camera-font
-                      "
-                      >Off</a
-                    >
+                <div id="creationMethod_sprite" class="card-text"></div>
+                <div class="card-body">
+                  <div class="card-title camera_title"></div>
+                  <div class="camera-btns">
+                    <div class="card-subtitle camera_subtitle"></div>
+                    <div class="btn-group">
+                      <a
+                        href="#"
+                        class="btn btn-primary btn-responsive camera-font"
+                        >Front</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-secondary btn-responsive camera-font"
+                        >Back</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-success btn-responsive camera-font"
+                        >Left</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-danger btn-responsive camera-font"
+                        >Right</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-warning btn-responsive camera-font"
+                        >Top</a
+                      >
+                      <a
+                        href="#"
+                        class="
+                          btn btn-outline-dark
+                          disabled
+                          btn-responsive
+                          camera-font
+                        "
+                        >Off</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -440,7 +531,7 @@
             <div class="card text-left">
               <div class="card-header gallery-header">Gallery</div>
               <div class="card-body">
-                <h4 class="card-title">3D Image Gallery</h4>
+                <div class="gallery_title card-title"></div>
                 <a href="#">
                   <img
                     class="card-img-top img-fluid img-thumbnail"
@@ -462,10 +553,7 @@
                     alt="Sprite"
                   />
                 </a>
-                <p class="card-text">
-                  These 3D images of the Sprite bottle are rendered in Blender
-                  with the Cycles render engine
-                </p>
+                <div class="gallery_description card-text"></div>
               </div>
             </div>
           </div>
@@ -477,15 +565,9 @@
           <div class="col-sm-12">
             <div class="card">
               <div class="card-body">
-                <h3 class="card-title">Sprite</h3>
-                <p class="card-text">
-                  First introduced in 1961, crisp, refreshing, clean-tasting
-                  Sprite is now the world's leading lemon and lime flavoured
-                  soft drink and is sold in more than 190 different countries.
-                  Sprite Zero, part of our no sugar Zero range, offers the
-                  delicious lemon lime taste of Sprite without the sugar or
-                  calories.
-                </p>
+                <div id="title_sprite" class="card-title"></div>
+                <div id="subtitle-sprite" class="card-subtitle"></div>
+                <div id="description_sprite" class="card-text"></div>
                 <a
                   href="http://www.coca-cola.co.uk/drinks/sprite/sprite"
                   class="btn btn-primary"
@@ -506,71 +588,78 @@
             <div class="card text-left">
               <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
-                  <li class="nav-item">
-                    <a class="nav-link navCoke" href="#">Coke</a>
+                  <li class="nav-item link3D">
+                    <a class="nav-link link3D navCoke" href="#"
+                      >Coke Original</a
+                    >
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item link3D">
                     <a class="nav-link navSprite" href="#">Sprite</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item link3D">
                     <a class="nav-link navPepper active" href="#">Dr Pepper</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navZero" href="#">Coke Zero</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navFanta" href="#">Fanta</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navCosta" href="#">Costa Coffee</a>
                   </li>
                 </ul>
               </div>
               <div class="card-body">
-                <h4 class="card-title">Coca Cola 3D Model</h4>
+                <div id="model3DTitle_pepper" class="card-title"></div>
                 <iframe
                   class="render"
                   allowfullscreen
                   eager
                   src="https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:8514789833/applications/dr_pepper_web/dr_pepper_web.html"
                 ></iframe>
-                <p class="card-text">
-                  This 3D model of a Dr Pepper cup was modeled in Blender then
-                  exported as a 3D web application using Verge3D. The label was
-                  made using Adobe Illustrator.
-                </p>
-                <h5 class="card-subtitle">Camera Views</h5>
-                <div class="camera-btns">
-                  <p class="card-text">
-                    These buttons select a range of 3D model viewpoints:
-                  </p>
-                  <div class="btn-group">
-                    <a
-                      href="#"
-                      class="btn btn-primary btn-responsive camera-font"
-                      >Front</a
-                    >
-                    <a
-                      href="#"
-                      class="btn btn-secondary btn-responsive camera-font"
-                      >Back</a
-                    >
-                    <a
-                      href="#"
-                      class="btn btn-success btn-responsive camera-font"
-                      >Left</a
-                    >
-                    <a
-                      href="#"
-                      class="btn btn-danger btn-responsive camera-font"
-                      >Right</a
-                    >
-                    <a
-                      href="#"
-                      class="btn btn-warning btn-responsive camera-font"
-                      >Top</a
-                    >
-                    <a
-                      href="#"
-                      class="
-                        btn btn-outline-dark
-                        disabled
-                        btn-responsive
-                        camera-font
-                      "
-                      >Off</a
-                    >
+                <div id="creationMethod_pepper" class="card-text"></div>
+                <div class="card-body">
+                  <div class="card-title camera_title"></div>
+                  <div class="camera-btns">
+                    <div class="card-subtitle camera_subtitle"></div>
+                    <div class="btn-group">
+                      <a
+                        href="#"
+                        class="btn btn-primary btn-responsive camera-font"
+                        >Front</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-secondary btn-responsive camera-font"
+                        >Back</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-success btn-responsive camera-font"
+                        >Left</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-danger btn-responsive camera-font"
+                        >Right</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-warning btn-responsive camera-font"
+                        >Top</a
+                      >
+                      <a
+                        href="#"
+                        class="
+                          btn btn-outline-dark
+                          disabled
+                          btn-responsive
+                          camera-font
+                        "
+                        >Off</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -581,7 +670,7 @@
             <div class="card text-left">
               <div class="card-header gallery-header">Gallery</div>
               <div class="card-body">
-                <h4 class="card-title">3D Image Gallery</h4>
+                <div class="card-title gallery_title"></div>
                 <a href="#">
                   <img
                     class="card-img-top img-fluid img-thumbnail"
@@ -603,10 +692,7 @@
                     alt="Dr Pepper"
                   />
                 </a>
-                <p class="card-text">
-                  These 3D images of the Coke can, Sprite bottle and Dr Pepper
-                  cup are rendered in Blender with the Cycles render engine
-                </p>
+                <div class="card-text gallery_description"></div>
               </div>
             </div>
           </div>
@@ -618,16 +704,411 @@
           <div class="col-sm-12">
             <div class="card">
               <div class="card-body">
-                <h3 class="card-title">Dr Pepper</h3>
-                <p class="card-text">
-                  Dr Pepper's unique, sparkling blend of 23 fruit flavours has
-                  been around for well over a century and it's still the same,
-                  with that distinctive flavour you just can't quite put your
-                  tongue on. It was created by Texas pharmacist Charles Alderton
-                  in 1885.
-                </p>
+                <div id="title_pepper" class="card-title"></div>
+                <div id="subtitle_pepper" class="card-subtitle"></div>
+                <div id="description_pepper" class="card-text"></div>
                 <a
                   href="http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper"
+                  class="btn btn-primary"
+                  >Find out more ...</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coke Zero page block element -->
+      <div id="zero" class="main_contents">
+        <!-- Row to hold 3D image and gallery cards -->
+        <div class="row">
+          <!-- Column for 3D image -->
+          <div class="col-sm-9">
+            <div class="card text-left">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                  <li class="nav-item link3D">
+                    <a class="nav-link link3D navCoke" href="#"
+                      >Coke Original</a
+                    >
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navSprite" href="#">Sprite</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navPepper" href="#">Dr Pepper</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navZero active" href="#">Coke Zero</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navFanta" href="#">Fanta</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navCosta" href="#">Costa Coffee</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div id="model3DTitle_zero" class="card-title"></div>
+                <iframe
+                  class="render"
+                  allowfullscreen
+                  src="https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:8514789833/applications/coke bottle/coke bottle.html"
+                ></iframe>
+                <div id="creationMethod_zero" class="card-text"></div>
+                <div class="card-body">
+                  <div class="card-title camera_title"></div>
+                  <div class="camera-btns">
+                    <div class="card-subtitle camera_subtitle"></div>
+                    <div class="btn-group">
+                      <a
+                        href="#"
+                        class="btn btn-primary btn-responsive camera-font"
+                        >Front</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-secondary btn-responsive camera-font"
+                        >Back</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-success btn-responsive camera-font"
+                        >Left</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-danger btn-responsive camera-font"
+                        >Right</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-warning btn-responsive camera-font"
+                        >Top</a
+                      >
+                      <a
+                        href="#"
+                        class="
+                          btn btn-outline-dark
+                          disabled
+                          btn-responsive
+                          camera-font
+                        "
+                        >Off</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Column to hold 3D image gallery -->
+          <div class="col-sm-3">
+            <div class="card text-left">
+              <div class="card-header gallery-header">Gallery</div>
+              <div class="card-body">
+                <div class="card-title gallery_title"></div>
+                <a href="#">
+                  <img
+                    class="card-img-top img-fluid img-thumbnail"
+                    src="assets/Renders/coke_bottle1.png"
+                    alt="Coke Zero"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="card-img-top img-fluid img-thumbnail"
+                    src="assets/Renders/coke_bottle2.png"
+                    alt="Coke Zero"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="card-img-top img-fluid img-thumbnail"
+                    src="assets/Renders/coke_bottle3.png"
+                    alt="Coke Zero"
+                  />
+                </a>
+                <div class="card-text gallery_description"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row to hold descriptive text -->
+        <div class="row">
+          <!-- Description Column-->
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <div id="title_zero" class="card-title"></div>
+                <div id="subtitle_zero" class="card-subtitle"></div>
+                <div id="description_zero" class="card-text"></div>
+                <a
+                  href="https://www.coca-cola.co.uk/brands/coca-cola-zero-sugar"
+                  class="btn btn-primary"
+                  >Find out more ...</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fanta page block element -->
+      <div id="fanta" class="main_contents">
+        <!-- Row to hold 3D image and gallery cards -->
+        <div class="row">
+          <!-- Column for 3D image -->
+          <div class="col-sm-9">
+            <div class="card text-left">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                  <li class="nav-item link3D">
+                    <a class="nav-link link3D navCoke" href="#"
+                      >Coke Original</a
+                    >
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navSprite" href="#">Sprite</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navPepper" href="#">Dr Pepper</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navZero" href="#">Coke Zero</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navFanta active" href="#">Fanta</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navCosta" href="#">Costa Coffee</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div id="model3DTitle_fanta" class="card-title"></div>
+                <iframe
+                  class="render"
+                  allowfullscreen
+                  src="https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:8514789833/applications/fanta_can/fanta_can.html"
+                ></iframe>
+                <div id="creationMethod_fanta" class="card-text"></div>
+                <div class="card-body">
+                  <div class="card-title camera_title"></div>
+                  <div class="camera-btns">
+                    <div class="card-subtitle camera_subtitle"></div>
+                    <div class="btn-group">
+                      <a
+                        href="#"
+                        class="btn btn-primary btn-responsive camera-font"
+                        >Front</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-secondary btn-responsive camera-font"
+                        >Back</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-success btn-responsive camera-font"
+                        >Left</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-danger btn-responsive camera-font"
+                        >Right</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-warning btn-responsive camera-font"
+                        >Top</a
+                      >
+                      <a
+                        href="#"
+                        class="
+                          btn btn-outline-dark
+                          disabled
+                          btn-responsive
+                          camera-font
+                        "
+                        >Off</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Column to hold 3D image gallery -->
+          <div class="col-sm-3">
+            <div class="card text-left">
+              <div class="card-header gallery-header">Gallery</div>
+              <div class="card-body">
+                <div class="card-title gallery_title"></div>
+                <a href="#">
+                  <img
+                    class="card-img-top img-fluid img-thumbnail"
+                    src="assets/Renders/fanta1.png"
+                    alt="Fanta"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="card-img-top img-fluid img-thumbnail"
+                    src="assets/Renders/fanta2.png"
+                    alt="Fanta"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="card-img-top img-fluid img-thumbnail"
+                    src="assets/Renders/fanta3.png"
+                    alt="Fanta"
+                  />
+                </a>
+                <div class="card-text gallery_description"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row to hold descriptive text -->
+        <div class="row">
+          <!-- Description Column-->
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <div id="title_fanta" class="card-title"></div>
+                <div id="subtitle_fanta" class="card-subtitle"></div>
+                <div id="description_fanta" class="card-text"></div>
+                <a
+                  href="https://www.coca-cola.co.uk/brands/fanta"
+                  class="btn btn-primary"
+                  >Find out more ...</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Costa Coffee page block element -->
+      <div id="costa" class="main_contents">
+        <!-- Row to hold 3D image and gallery cards -->
+        <div class="row">
+          <!-- Column for 3D image -->
+          <div class="col-sm-9">
+            <div class="card text-left">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                  <li class="nav-item link3D">
+                    <a class="nav-link link3D navCoke" href="#"
+                      >Coke Original</a
+                    >
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navSprite" href="#">Sprite</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navPepper" href="#">Dr Pepper</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navZero" href="#">Coke Zero</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navFanta" href="#">Fanta</a>
+                  </li>
+                  <li class="nav-item link3D">
+                    <a class="nav-link navCosta active" href="#"
+                      >Costa Coffee</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div id="model3DTitle_costa" class="card-title"></div>
+                <iframe
+                  class="render"
+                  allowfullscreen
+                  src="https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:8514789833/applications/costa_cup/costa_cup.html"
+                ></iframe>
+                <div id="creationMethod_costa" class="card-text"></div>
+                <div class="card-body">
+                  <div class="card-title camera_title"></div>
+                  <div class="camera-btns">
+                    <div class="card-subtitle camera_subtitle"></div>
+                    <div class="btn-group">
+                      <a
+                        href="#"
+                        class="btn btn-primary btn-responsive camera-font"
+                        >Front</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-secondary btn-responsive camera-font"
+                        >Back</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-success btn-responsive camera-font"
+                        >Left</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-danger btn-responsive camera-font"
+                        >Right</a
+                      >
+                      <a
+                        href="#"
+                        class="btn btn-warning btn-responsive camera-font"
+                        >Top</a
+                      >
+                      <a
+                        href="#"
+                        class="
+                          btn btn-outline-dark
+                          disabled
+                          btn-responsive
+                          camera-font
+                        "
+                        >Off</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Column to hold 3D image gallery -->
+          <div class="col-sm-3">
+            <div class="card text-left">
+              <div class="card-header gallery-header">Gallery</div>
+              <div class="card-body">
+                <div class="card-title gallery_title"></div>
+                <iframe
+                  id="gallery"
+                  class="gallery"
+                  src="gallery.html"
+                ></iframe>
+                <div class="card-text gallery_description"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row to hold descriptive text -->
+        <div class="row">
+          <!-- Description Column-->
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <div id="title_costa" class="card-title"></div>
+                <div id="subtitle_costa" class="card-subtitle"></div>
+                <div id="description_costa" class="card-text"></div>
+                <a
+                  href="https://www.coca-cola.co.uk/brands/costa-coffee"
                   class="btn btn-primary"
                   >Find out more ...</a
                 >

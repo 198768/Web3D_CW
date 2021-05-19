@@ -39,7 +39,7 @@ class Model {
 
     public function dbCreateTable() {
         try {
-            $this->dbHandle->exec("CREATE TABLE Model_3D (Id INTEGER PRIMARY KEY, model3DTitle TEXT, creationMethod TEXT, modelTitle TEXT, modelSubtitle TEXT, modelDescription TEXT)");
+            $this->dbHandle->exec("CREATE TABLE Model_3D (Id INTEGER PRIMARY KEY model3DTitle TEXT, creationMethod TEXT, modelTitle TEXT, modelSubtitle TEXT, modelDescription TEXT)");
             return "Model_3D table is successfully created inside test1.db file";
         }
         catch (PDOException $e) {
@@ -51,9 +51,9 @@ class Model {
     public function dbInsertData() {
         try {
             $this->dbHandle->exec(
-            "INSERT INTO Model_3D (Id, model3DTitle, creationMethod, modelTitle, modelSubtitle, modelDescription) VALUES (1, 'string_1', 'string_2', 'string_4', 'string_5');" .
-            "INSERT INTO Model_3D (Id, model3DTitle, creationMethod, modelTitle, modelSubtitle, modelDescription) VALUES (2, 'string_1', 'string_2', 'string_4', 'string_5');" .
-            "INSERT INTO Model_3D (Id, model3DTitle, creationMethod, modelTitle, modelSubtitle, modelDescription) VALUES (3, 'string_1', 'string_2', 'string_4', 'string_5');");
+            "INSERT INTO Model_3D (Id, model3DTitle, creationMethod, modelTitle, modelSubtitle, modelDescription) VALUES (1, 'string_1', 'string_2', 'string_3', 'string_4', 'string_5');" .
+            "INSERT INTO Model_3D (Id, model3DTitle, creationMethod, modelTitle, modelSubtitle, modelDescription) VALUES (2, 'string_1', 'string_2', 'string_3', 'string_4', 'string_5');" .
+            "INSERT INTO Model_3D (Id, model3DTitle, creationMethod, modelTitle, modelSubtitle, modelDescription) VALUES (3, 'string_1', 'string_2', 'string_3', 'string_4', 'string_5');");
             return "3D model data inserted successfully inside test1.db";
         }
         catch (PDOException $e) {
@@ -82,6 +82,10 @@ class Model {
         }
         $this->dbHandle = NULL;
         return $result;
+    }
+
+    public function dbGetBrand() {
+        return array("-", "Coke", "Sprite", "Dr Pepper", "Coke Zero", "Fanta", "Costa Coffee");
     }
 }
 ?>

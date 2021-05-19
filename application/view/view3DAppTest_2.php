@@ -48,27 +48,27 @@
     <h1>Second 3D App Test View</h1>
     <div class="box">
         <h2><?php echo $model_1 ?></h2>
-        <img class="imgBox" src="assets/Renders/<?php echo $image3D_1 ?>.png" alt="image not showing">
+        <img class="imgBox" src="/Web3D_CW/assets/Renders/<?php echo $image3D_1 ?>.png" alt="image not showing">
     </div>
     <div class="box">
         <h2><?php echo $model_2 ?></h2>
-        <img class="imgBox" src="assets/Renders/<?php echo $image3D_2 ?>.png" alt="image not showing">
+        <img class="imgBox" src="/Web3D_CW/assets/Renders/<?php echo $image3D_2 ?>.png" alt="image not showing">
     </div>
     <div class="box">
         <h2><?php echo $model_3 ?></h2>
-        <img class="imgBox" src="assets/Renders/<?php echo $image3D_3 ?>.png" alt="image not showing">
+        <img class="imgBox" src="/Web3D_CW/assets/Renders/<?php echo $image3D_3 ?>.png" alt="image not showing">
     </div>
     <div class="box">
         <h2><?php echo $model_4 ?></h2>
-        <img class="imgBox" src="assets/Renders/<?php echo $image3D_4 ?>.png" alt="image not showing">
+        <img class="imgBox" src="/Web3D_CW/assets/Renders/<?php echo $image3D_4 ?>.png" alt="image not showing">
     </div>
     <div class="box">
         <h2><?php echo $model_5 ?></h2>
-        <img class="imgBox" src="assets/Renders/<?php echo $image3D_5 ?>.png" alt="image not showing">
+        <img class="imgBox" src="/Web3D_CW/assets/Renders/<?php echo $image3D_5 ?>.png" alt="image not showing">
     </div>
     <div class="box">
         <h2><?php echo $model_6 ?></h2>
-        <img class="imgBox" src="assets/Renders/<?php echo $image3D_6 ?>.png" alt="image not showing">
+        <img class="imgBox" src="/Web3D_CW/assets/Renders/<?php echo $image3D_6 ?>.png" alt="image not showing">
     </div>
 </body>
 </html>
